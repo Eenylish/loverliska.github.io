@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #ff8da1;
+    padding: 30px;
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 28px;
+    color: #ff4f6c;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff8da1;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.photo-gallery .images {
+    display: flex;
+    justify-content: center; /* Центрируем фотографии */
+    gap: 20px;
+}
+
+.photo-gallery img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+    background-color: #ffe6f2;
+    border-left: 10px solid #ff4f6c;
+    padding: 20px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.heart-btn {
+    font-size: 100px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #ff4f6c;
+    display: block;
+    margin: 0 auto; /* Центрируем сердечко */
+}
+
+.heart-btn:active {
+    transform: scale(1.2);
+    color: #ff8da1;
+}
+
+.heart-btn:hover {
+    transform: scale(1.1);
+    color: #ff1a5d;
+}
+
+.heart-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #ff4f6c;
+    border-radius: 50%;
+    animation: heartEffect 1s ease-out forwards;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes heartEffect {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(2);
+      
